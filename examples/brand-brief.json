@@ -1,0 +1,9 @@
+{
+	"name": "Acme",
+	"brand": "#4f46e5",
+	"accent": "#f59e0b",
+	"neutralTint": "#4f46e5",
+	"typeRatio": 1.25,
+	"fontHeading": "Inter, system-ui, sans-serif",
+	"fontBody": "Inter, system-ui, sans-serif"
+}

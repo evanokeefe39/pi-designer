@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+*.log
+.DS_Store
+.env
+.env.*
+design-system/
+design-brief.json
+dist/
+.pi/
