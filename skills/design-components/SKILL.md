@@ -184,4 +184,4 @@ For each component, note in a comment or a companion `components.md`:
 - `design-icons` — icons are a Layer 1b atom subset, import them into components.
 - `design-patterns` — Layer 2, composes these components into layouts.
 - `design-accessibility` — checks these for focus rings, contrast, semantics.
-- `knowledge/resources.md` → UI Component Libraries — reference designs.
+- `../../knowledge/resources.md` → UI Component Libraries — reference designs.

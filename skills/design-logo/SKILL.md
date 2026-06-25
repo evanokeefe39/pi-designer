@@ -21,8 +21,8 @@ Ask for:
 
 ### 2. Read the relevant references
 
-- `knowledge/aesthetics.md` — look up the style if they named one.
-- `knowledge/resources.md` → AI Generation section — recommend a tool
+- `../../knowledge/aesthetics.md` — look up the style if they named one.
+- `../../knowledge/resources.md` → AI Generation section — recommend a tool
   (Midjourney, Gemini, Krea, Kittl).
 
 ### 3. Write the prompt
@@ -48,5 +48,5 @@ if the user wants options.
 ## Related
 
 - `design-brand-kit` — multiple brand elements in one image.
-- `knowledge/aesthetics.md` — for style traits.
-- `knowledge/resources.md` — AI Generation section for tool recommendations.
+- `../../knowledge/aesthetics.md` — for style traits.
+- `../../knowledge/resources.md` — AI Generation section for tool recommendations.

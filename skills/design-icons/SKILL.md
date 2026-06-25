@@ -17,7 +17,7 @@ user needs a full set for their project.
 
 ### 1. Pick the icon family
 
-Match the family to the brand mood. Read `knowledge/resources.md` → UI
+Match the family to the brand mood. Read `../../knowledge/resources.md` → UI
 Component Libraries → React Icons for the available sets.
 
 | Brand mood | Icon family | Style |
@@ -120,7 +120,7 @@ If starting fresh, create the files wherever the project keeps its shared UI.
 
 - `design-system` — for brand tokens (the icon family choice follows the mood).
 - `design-research` — for the brand direction that picks the family.
-- `knowledge/resources.md` → React Icons.
+- `../../knowledge/resources.md` → React Icons.
 
 ## Related
 

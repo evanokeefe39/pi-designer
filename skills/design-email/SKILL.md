@@ -138,4 +138,4 @@ Write the filled email as `email.html`. Merge the section markup into the
 
 - `design-carousel`, `design-report` — sibling L4 deliverable skills.
 - `design-accessibility` — check contrast on email elements.
-- `knowledge/resources.md` — no email-specific tools curated yet.
+- `../../knowledge/resources.md` — no email-specific tools curated yet.

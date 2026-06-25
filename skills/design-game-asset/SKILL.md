@@ -24,10 +24,10 @@ Ask for:
 
 ### 2. Read the relevant references
 
-- `knowledge/resources.md` → AI Generation section — recommend a tool
+- `../../knowledge/resources.md` → AI Generation section — recommend a tool
   (Modyfi for flow artboards, Midjourney for high-consistency characters,
   Krea for style transfer).
-- `knowledge/resources.md` → Game UI & Game Development section — GameUI
+- `../../knowledge/resources.md` → Game UI & Game Development section — GameUI
   Database for UI reference.
 
 ### 3. Generate the base
@@ -68,6 +68,6 @@ JPEG or PNG for backgrounds).
 
 ## Related
 
-- `knowledge/resources.md` → Game UI & Game Development.
-- `knowledge/aesthetics.md` — for pixel art or other game-appropriate
+- `../../knowledge/resources.md` → Game UI & Game Development.
+- `../../knowledge/aesthetics.md` — for pixel art or other game-appropriate
   aesthetic references.

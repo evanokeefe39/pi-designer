@@ -24,8 +24,8 @@ they want to expand. If they have more than 9, split into multiple boards.
 
 ### 2. Read the relevant references
 
-- `knowledge/resources.md` → AI Generation section — recommend a tool.
-- `knowledge/aesthetics.md` — if they named or need an aesthetic for the
+- `../../knowledge/resources.md` → AI Generation section — recommend a tool.
+- `../../knowledge/aesthetics.md` — if they named or need an aesthetic for the
   visual style of the frames.
 
 ### 3. Write the prompt
@@ -59,6 +59,6 @@ the style prompt.
 
 ## Related
 
-- `knowledge/aesthetics.md` — visual style reference for the frames.
-- `knowledge/principles.md` — motion principles if the storyboard has
+- `../../knowledge/aesthetics.md` — visual style reference for the frames.
+- `../../knowledge/principles.md` — motion principles if the storyboard has
   animation intent.

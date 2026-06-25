@@ -27,8 +27,8 @@ Ask for:
 
 ### 2. Read the relevant references
 
-- `knowledge/aesthetics.md` → Bento Grid — review the layout traits.
-- `knowledge/resources.md` → AI Generation section — recommend a tool.
+- `../../knowledge/aesthetics.md` → Bento Grid — review the layout traits.
+- `../../knowledge/resources.md` → AI Generation section — recommend a tool.
 
 ### 3. Write the prompt
 
@@ -57,4 +57,4 @@ grid dimensions ("3×2 grid"), or simplify to fewer elements.
 
 - `design-logo` — logo-only prompt (simpler, single output).
 - `design-style-recreate` — apply an aesthetic to brand visuals.
-- `knowledge/aesthetics.md` → Bento Grid.
+- `../../knowledge/aesthetics.md` → Bento Grid.

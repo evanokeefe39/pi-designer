@@ -8,7 +8,7 @@ description: Pick an existing graphic design style or aesthetic and recreate it 
 Use this skill when the user wants to **recreate a specific design
 aesthetic** via AI image generation — Swiss Editorial, Brutalist Billboard,
 Cybercore, Bento Grid, Mixed Media, or any style documented in
-`knowledge/aesthetics.md`.
+`../../knowledge/aesthetics.md`.
 
 ## Workflow
 
@@ -19,7 +19,7 @@ use `design-research` to find one that fits their project.
 
 ### 2. Read the style's traits
 
-Open `knowledge/aesthetics.md` and read the entry for the chosen style.
+Open `../../knowledge/aesthetics.md` and read the entry for the chosen style.
 Note the **key traits**: typography, layout rules, colour palette,
 composition patterns, texture/effect signals.
 
@@ -39,7 +39,7 @@ For example, for Brutalist Billboard:
 
 ### 4. Generate and iterate
 
-Generate with a recommended AI tool from `knowledge/resources.md`. Compare
+Generate with a recommended AI tool from `../../knowledge/resources.md`. Compare
 the output against the style's traits and refine: adjust the prompt to
 emphasise missed traits or reduce unwanted ones.
 
@@ -69,6 +69,6 @@ Japanese bento-box inspired composition."
 ## Related
 
 - `design-research` — if the user hasn't chosen a style yet.
-- `knowledge/aesthetics.md` — the full style reference.
-- `knowledge/principles.md` — design concepts that may apply (halftone,
+- `../../knowledge/aesthetics.md` — the full style reference.
+- `../../knowledge/principles.md` — design concepts that may apply (halftone,
   dithering, ink bleed for the Mixed Media style).

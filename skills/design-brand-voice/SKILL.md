@@ -51,7 +51,7 @@ Example:
 - **Confident, not loud:** "Try it free." / "THE BEST TOOL EVER MADE!!!!"
 - **Playful, not childish:** "Oops, that didn't work." / "Uh-oh, you broke it, silly goose!"
 
-Read `knowledge/principles.md` → Brand-system framework for the 5-layer
+Read `../../knowledge/principles.md` → Brand-system framework for the 5-layer
 model — voice lives inside Layer 1 (Brand Identity) and feeds into Layer 4
 (Guidelines).
 
@@ -102,7 +102,7 @@ by every downstream skill that writes copy:
 
 ## Related
 
-- `knowledge/principles.md` → Brand-system framework (5 layers).
+- `../../knowledge/principles.md` → Brand-system framework (5 layers).
 - `design-system` — voice informs token mood (a "loud" brand picks different ramps).
 - `design-carousel`, `design-email`, `design-report` — these write copy in this voice.
 - `design-research` — if the user hasn't done research, run it first for the brand direction.

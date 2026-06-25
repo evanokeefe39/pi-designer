@@ -24,7 +24,7 @@ Ask for:
 
 ### 2. Read the relevant references
 
-- `knowledge/resources.md` → AI Generation section — recommend a tool
+- `../../knowledge/resources.md` → AI Generation section — recommend a tool
   (Midjourney for high fidelity, Gemini for fast iteration, Krea for
   style transfer from sketch).
 
@@ -53,4 +53,4 @@ lighting intensity, background depth, or adding environmental context.
 ## Related
 
 - `design-mockup` — for website/app UI mockups (different domain).
-- `knowledge/aesthetics.md` — mood/style direction for the product context.
+- `../../knowledge/aesthetics.md` — mood/style direction for the product context.
