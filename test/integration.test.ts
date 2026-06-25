@@ -38,29 +38,48 @@ describe("extension integration", () => {
 		expect(pi.commands.has("design-system")).toBe(true);
 	});
 
-	it("exports every target to disk via the export tool", async () => {
+	it("exports every target to .pi-designer/ via the export tool", async () => {
 		const pi = mockPi();
 		createExtension(pi);
 		const out = mkdtempSync(join(tmpdir(), "pi-designer-"));
 		const tokens = JSON.stringify(buildDesignTokens({ name: "Acme", brand: "#4f46e5" }));
 
-		// Use the default outDir ("design-system") rooted at the mock cwd.
 		const result = await pi.tools
 			.get("export_design_system")
 			.execute("call-1", { tokens, targets: ["all"] }, undefined, undefined, { cwd: out });
 
 		expect(result.content[0].text).toContain("Wrote");
+		expect(result.content[0].text).toContain(".pi-designer/");
 		for (const rel of [
 			"website/tokens.css",
 			"report/report.css",
 			"carousel/carousel.json",
 			"email/email-template.html",
 		]) {
-			expect(existsSync(join(out, "design-system", rel))).toBe(true);
+			expect(existsSync(join(out, ".pi-designer", rel))).toBe(true);
 		}
-		expect(readFileSync(join(out, "design-system/website/tokens.css"), "utf8")).toContain(
+		expect(existsSync(join(out, ".pi-designer/tokens.json"))).toBe(true);
+		expect(readFileSync(join(out, ".pi-designer/website/tokens.css"), "utf8")).toContain(
 			"--color-brand-500:",
 		);
+	});
+
+	it("saves brief.json when brief param is provided", async () => {
+		const pi = mockPi();
+		createExtension(pi);
+		const out = mkdtempSync(join(tmpdir(), "pi-designer-"));
+		const tokens = JSON.stringify(buildDesignTokens({ name: "Acme", brand: "#4f46e5" }));
+		const brief = JSON.stringify({ name: "Acme", brand: "#4f46e5" });
+
+		await pi.tools
+			.get("export_design_system")
+			.execute("call-brief", { tokens, targets: ["website"], brief }, undefined, undefined, {
+				cwd: out,
+			});
+
+		const savedBrief = JSON.parse(readFileSync(join(out, ".pi-designer/brief.json"), "utf8"));
+		expect(savedBrief.name).toBe("Acme");
+		expect(savedBrief.brand).toBe("#4f46e5");
 	});
 
 	it("reports malformed tokens JSON instead of writing", async () => {

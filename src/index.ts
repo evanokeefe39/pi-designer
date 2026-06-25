@@ -106,13 +106,15 @@ export default function (pi: ExtensionAPI) {
 		name: "export_design_system",
 		label: "Export design system",
 		description:
-			"Write a design-token set to per-target files on disk. `tokens` is the JSON from build_design_system. `targets` selects mediums (website, report, carousel, email) or use ['all'].",
-		promptSnippet: "Export design tokens to website/report/carousel/email files.",
+			"Write a design-token set to per-target files under .pi-designer/. Writes brief.json, tokens.json, and per-target files. `tokens` is the JSON from build_design_system. `targets` selects mediums (website, report, carousel, email) or use ['all'].",
+		promptSnippet: "Export design tokens to .pi-designer/",
 		parameters: Type.Object({
 			tokens: Type.String({ description: "Design tokens as a JSON string." }),
 			targets: Type.Array(StringEnum(["website", "report", "carousel", "email", "all"] as const)),
-			outDir: Type.Optional(
-				Type.String({ description: "Output directory (default: design-system)." }),
+			brief: Type.Optional(
+				Type.String({
+					description: "Brief JSON as a string (saved alongside tokens for resumability).",
+				}),
 			),
 		}),
 		async execute(_id, params, _signal, _onUpdate, ctx) {
@@ -120,7 +122,6 @@ export default function (pi: ExtensionAPI) {
 			try {
 				tokens = JSON.parse(params.tokens) as DesignTokens;
 			} catch (err) {
-				// Edge case: malformed JSON — fail loudly rather than write garbage.
 				return text(`Could not parse tokens JSON: ${(err as Error).message}`);
 			}
 
@@ -128,30 +129,40 @@ export default function (pi: ExtensionAPI) {
 				? [...TARGET_NAMES]
 				: (params.targets.filter((t) => t !== "all") as TargetName[]);
 
-			const outDir = resolve(ctx.cwd, params.outDir ?? "design-system");
+			const root = resolve(ctx.cwd, ".pi-designer");
+			await mkdir(root, { recursive: true });
+
+			// Save brief for resumability
+			if (params.brief) {
+				await writeFile(join(root, "brief.json"), params.brief, "utf8");
+			}
+			// Save full tokens
+			await writeFile(join(root, "tokens.json"), JSON.stringify(tokens, null, 2), "utf8");
+
 			const files = runTargets(tokens, selected);
 			for (const file of files) {
-				const dest = join(outDir, file.path);
+				const dest = join(root, file.path);
 				await mkdir(dirname(dest), { recursive: true });
 				await writeFile(dest, file.content, "utf8");
 			}
 
-			const written = files
-				.map((f) => `  ${join(params.outDir ?? "design-system", f.path)}`)
-				.join("\n");
+			const written = files.map((f) => `  .pi-designer/${f.path}`).join("\n");
 			return text(`Wrote ${files.length} file(s) for [${selected.join(", ")}]:\n${written}`);
 		},
 	});
 
 	pi.registerCommand("design-system", {
-		description: "Scaffold a design-system brief and explain the pi-designer workflow.",
+		description:
+			"Scaffold a design-system brief under .pi-designer/ and explain the pi-designer workflow.",
 		handler: async (_args, ctx) => {
-			const briefPath = resolve(ctx.cwd, "design-brief.json");
+			const root = resolve(ctx.cwd, ".pi-designer");
+			await mkdir(root, { recursive: true });
+			const briefPath = join(root, "brief.json");
 			await writeFile(briefPath, STARTER_BRIEF, { flag: "wx" }).catch(() => {
 				// Edge case: don't clobber an existing brief.
 			});
 			ctx.ui.notify(
-				"pi-designer: edit design-brief.json, then ask me to build and export your design system.",
+				"pi-designer: edit .pi-designer/brief.json, then ask me to build and export your design system.",
 				"info",
 			);
 		},

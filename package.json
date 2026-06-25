@@ -35,6 +35,7 @@
 		"test:watch": "vitest"
 	},
 	"dependencies": {
+		"playwright": "^1.61.1",
 		"typebox": "^1.1.38"
 	},
 	"peerDependencies": {
