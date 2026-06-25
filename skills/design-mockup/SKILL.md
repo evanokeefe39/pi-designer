@@ -21,12 +21,12 @@ Ask for:
 - **Device** (desktop browser, mobile, tablet)
 - **Mood / style** (clean, bold, dark, playful, corporate)
 
-Read `knowledge/aesthetics.md` if they need help picking a visual style.
+Read `../../knowledge/aesthetics.md` if they need help picking a visual style.
 
 ### 2. Read the relevant references
 
-- `knowledge/resources.md` → AI Generation section — recommend a tool.
-- `knowledge/aesthetics.md` — if they named or need an aesthetic.
+- `../../knowledge/resources.md` → AI Generation section — recommend a tool.
+- `../../knowledge/aesthetics.md` — if they named or need an aesthetic.
 
 ### 3. Write the prompt
 
@@ -55,5 +55,5 @@ card grid), or change the colour scheme.
 ## Related
 
 - `design-style-recreate` — apply a specific aesthetic to the mockup.
-- `knowledge/resources.md` → Archives & Visual Inspiration — Mobbin,
+- `../../knowledge/resources.md` → Archives & Visual Inspiration — Mobbin,
   Dribbble for UI reference.

@@ -57,7 +57,7 @@ Ramps are perceptually uniform (OKLCH). For accessible text: brand-700+ on neutr
 ## Related
 
 - `design-research` — upstream inspiration → brief phase for this skill.
-- `knowledge/resources.md` — curated design-tool catalog.
-- `knowledge/aesthetics.md` — visual style directions.
-- `knowledge/principles.md` — motion, brand framework, biases, tips.
-- `knowledge/workflows.md` — reference recipes (mixed-media poster, Cybercore).
+- `../../knowledge/resources.md` — curated design-tool catalog.
+- `../../knowledge/aesthetics.md` — visual style directions.
+- `../../knowledge/principles.md` — motion, brand framework, biases, tips.
+- `../../knowledge/workflows.md` — reference recipes (mixed-media poster, Cybercore).

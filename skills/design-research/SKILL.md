@@ -37,21 +37,21 @@ Synthesise what you found into 2–3 visual directions for the user.
 
 ### 3. Surface aesthetic directions
 
-Read `knowledge/aesthetics.md` and consider what fits the audience and
+Read `../../knowledge/aesthetics.md` and consider what fits the audience and
 mood. Present 1–3 candidates with a sentence on why each fits. If the
 user named a specific aesthetic ("I want Brutalist"), just read its
 traits and apply them.
 
 ### 4. Point to relevant tools
 
-From `knowledge/resources.md`: palette tools (Khroma, Coolors),
+From `../../knowledge/resources.md`: palette tools (Khroma, Coolors),
 moodboarding (Pinterest, Milanote), typography (Google Fonts, Fonts In
 Use), UI references (Mobbin, Dribbble), stock/archives (Unsplash,
 Archives.design).
 
 ### 5. Apply relevant principles
 
-From `knowledge/principles.md`: motion principles, 5-layer brand
+From `../../knowledge/principles.md`: motion principles, 5-layer brand
 framework, cognitive biases, atomic tips that apply to the task.
 
 ### 6. Produce the brief
@@ -89,4 +89,4 @@ The user can modify the brief before the handoff.
 ## Related
 
 - `design-system` — consumes the brief, generates tokens, exports files.
-- `knowledge/resources.md`, `aesthetics.md`, `principles.md`, `workflows.md`.
+- `../../knowledge/resources.md`, `../../knowledge/aesthetics.md`, `../../knowledge/principles.md`, `../../knowledge/workflows.md`.

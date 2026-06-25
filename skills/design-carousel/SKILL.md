@@ -144,4 +144,4 @@ markup — the `design-carousel` upgrade path is tracked in `ISSUES.md`.
 
 - `design-email`, `design-report` — sibling L4 deliverable skills.
 - `design-accessibility` — check contrast on carousel slides.
-- `knowledge/aesthetics.md` — visual style for slide backgrounds/graphics.
+- `../../knowledge/aesthetics.md` — visual style for slide backgrounds/graphics.

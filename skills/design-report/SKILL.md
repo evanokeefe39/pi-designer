@@ -145,4 +145,4 @@ Test by opening in a browser and printing to PDF.
 
 - `design-carousel`, `design-email` — sibling L4 deliverable skills.
 - `design-accessibility` — check contrast, table semantics, heading hierarchy.
-- `knowledge/principles.md` → Print & texture concepts.
+- `../../knowledge/principles.md` → Print & texture concepts.

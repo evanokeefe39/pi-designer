@@ -130,5 +130,5 @@ Write an `accessibility-report.md` with:
 
 ## Related
 
-- `knowledge/principles.md` → Cognitive biases (bias-aware UX informs accessible patterns).
+- `../../knowledge/principles.md` → Cognitive biases (bias-aware UX informs accessible patterns).
 - Every deliverable skill (`design-carousel`, `design-email`, `design-report`) should be run through this before shipping.
